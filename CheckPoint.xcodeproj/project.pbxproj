@@ -12,6 +12,7 @@
 		BFD9A61B2174EFE00025B924 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD9A6192174EFE00025B924 /* Main.storyboard */; };
 		BFD9A61D2174EFE00025B924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD9A61C2174EFE00025B924 /* Assets.xcassets */; };
 		BFD9A6202174EFE00025B924 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD9A61E2174EFE00025B924 /* LaunchScreen.storyboard */; };
+		BFD9A6282174F5BD0025B924 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD9A6272174F5BD0025B924 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BFD9A61C2174EFE00025B924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFD9A61F2174EFE00025B924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFD9A6212174EFE00025B924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFD9A6272174F5BD0025B924 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				BFD9A6152174EFE00025B924 /* AppDelegate.swift */,
 				BFD9A6172174EFE00025B924 /* ViewController.swift */,
 				BFD9A6192174EFE00025B924 /* Main.storyboard */,
+				BFD9A6272174F5BD0025B924 /* GradientView.swift */,
 				BFD9A61C2174EFE00025B924 /* Assets.xcassets */,
 				BFD9A61E2174EFE00025B924 /* LaunchScreen.storyboard */,
 				BFD9A6212174EFE00025B924 /* Info.plist */,
@@ -137,6 +140,7 @@
 			files = (
 				BFD9A6182174EFE00025B924 /* ViewController.swift in Sources */,
 				BFD9A6162174EFE00025B924 /* AppDelegate.swift in Sources */,
+				BFD9A6282174F5BD0025B924 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
