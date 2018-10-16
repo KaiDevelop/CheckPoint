@@ -67,9 +67,122 @@
             </objects>
             <point key="canvasLocation" x="959.20000000000005" y="133.5832083958021"/>
         </scene>
+        <!--Macro View Controller-->
+        <scene sceneID="yQB-9p-K4r">
+            <objects>
+                <viewController id="NJa-UP-Eah" customClass="MacroViewController" customModule="CheckPoint" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BpH-gs-eIZ" customClass="GradientView" customModule="CheckPoint">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r4f-C0-n74">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Gn9-CF-3im">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="W6I-wS-Jqt">
+                                            <rect key="frame" x="0.0" y="133" width="375" height="400"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="10" id="voA-FH-ddQ">
+                                                <size key="itemSize" width="280" height="380"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                            <cells>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Card Cell" id="Enx-yr-TCW" customClass="CardCollectionViewCell" customModule="MacroCardScreen" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="10" width="280" height="380"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="380"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Contours_Blue" translatesAutoresizingMaskIntoConstraints="NO" id="ARa-Nq-ITV">
+                                                                <rect key="frame" x="0.0" y="0.0" width="280" height="380"/>
+                                                            </imageView>
+                                                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9qM-nE-DQd">
+                                                                <rect key="frame" x="0.0" y="190" width="280" height="190"/>
+                                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="EFh-X5-EHw">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="190"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Details" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="294-l1-obQ">
+                                                                            <rect key="frame" x="8" y="34" width="264" height="122"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="bottom" secondItem="294-l1-obQ" secondAttribute="bottom" constant="34" id="CiI-M2-2LW"/>
+                                                                        <constraint firstItem="294-l1-obQ" firstAttribute="top" secondItem="EFh-X5-EHw" secondAttribute="top" constant="34" id="drG-SS-xKX"/>
+                                                                        <constraint firstItem="294-l1-obQ" firstAttribute="leading" secondItem="EFh-X5-EHw" secondAttribute="leading" constant="8" id="ke0-ue-62R"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="294-l1-obQ" secondAttribute="trailing" constant="8" id="owV-1O-wYl"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="190" id="X1W-H8-f0G"/>
+                                                                </constraints>
+                                                                <blurEffect style="extraLight"/>
+                                                            </visualEffectView>
+                                                        </subviews>
+                                                    </view>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="ARa-Nq-ITV" secondAttribute="bottom" id="12B-im-8pC"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ARa-Nq-ITV" secondAttribute="trailing" id="1eC-LG-aCW"/>
+                                                        <constraint firstAttribute="trailing" secondItem="9qM-nE-DQd" secondAttribute="trailing" id="G0Q-bh-ffN"/>
+                                                        <constraint firstAttribute="bottom" secondItem="9qM-nE-DQd" secondAttribute="bottom" id="N8f-7q-hk7"/>
+                                                        <constraint firstItem="9qM-nE-DQd" firstAttribute="leading" secondItem="Enx-yr-TCW" secondAttribute="leading" id="WP7-hB-Rjh"/>
+                                                        <constraint firstItem="ARa-Nq-ITV" firstAttribute="top" secondItem="Enx-yr-TCW" secondAttribute="top" id="eHc-8u-ODs"/>
+                                                        <constraint firstItem="ARa-Nq-ITV" firstAttribute="leading" secondItem="Enx-yr-TCW" secondAttribute="leading" id="vMM-P0-v9d"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outlet property="cardTitleLabel" destination="294-l1-obQ" id="ZsR-8t-59y"/>
+                                                        <outlet property="featuredImageView" destination="ARa-Nq-ITV" id="zAj-gL-4OW"/>
+                                                    </connections>
+                                                </collectionViewCell>
+                                            </cells>
+                                            <connections>
+                                                <outlet property="dataSource" destination="NJa-UP-Eah" id="HNP-dE-W4p"/>
+                                                <outlet property="delegate" destination="NJa-UP-Eah" id="jPX-ak-AT5"/>
+                                            </connections>
+                                        </collectionView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="r4f-C0-n74" firstAttribute="trailing" secondItem="QNq-rJ-wpn" secondAttribute="trailing" id="2SC-gF-D79"/>
+                            <constraint firstItem="r4f-C0-n74" firstAttribute="top" secondItem="BpH-gs-eIZ" secondAttribute="top" id="Rqt-MY-C2l"/>
+                            <constraint firstItem="r4f-C0-n74" firstAttribute="leading" secondItem="QNq-rJ-wpn" secondAttribute="leading" id="b7L-sf-2zK"/>
+                            <constraint firstItem="r4f-C0-n74" firstAttribute="bottom" secondItem="QNq-rJ-wpn" secondAttribute="bottom" id="kgH-M9-dCw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QNq-rJ-wpn"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="FirstColor">
+                                <color key="value" red="0.14901960780000001" green="0.76862745099999996" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="SecondColor">
+                                <color key="value" red="0.59999999999999998" green="0.92941176469999998" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="W6I-wS-Jqt" id="zdM-rx-X9R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k5r-z5-883" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1759" y="134"/>
+        </scene>
     </scenes>
     <resources>
         <image name="CHECK POINT" width="348" height="38"/>
+        <image name="Contours_Blue" width="16" height="16"/>
         <image name="Touch ID" width="217" height="216"/>
         <image name="background" width="640" height="1135"/>
         <image name="home2" width="640" height="1136"/>
