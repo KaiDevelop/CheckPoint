@@ -10,6 +10,8 @@
 		8D86DFCE21788E2D002DBC90 /* CatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86DFCD21788E2D002DBC90 /* CatsViewController.swift */; };
 		8D86DFD021788E54002DBC90 /* CatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86DFCF21788E54002DBC90 /* CatCollectionViewCell.swift */; };
 		8D86DFD321788E81002DBC90 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86DFD221788E81002DBC90 /* Cat.swift */; };
+		BF8DF6862178AF770008ECE8 /* PopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DF6852178AF770008ECE8 /* PopupVC.swift */; };
+		BF8DF688217910410008ECE8 /* GradientViewForButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DF687217910410008ECE8 /* GradientViewForButton.swift */; };
 		BFD9A6162174EFE00025B924 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD9A6152174EFE00025B924 /* AppDelegate.swift */; };
 		BFD9A6182174EFE00025B924 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD9A6172174EFE00025B924 /* ViewController.swift */; };
 		BFD9A61B2174EFE00025B924 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD9A6192174EFE00025B924 /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 		8D86DFCD21788E2D002DBC90 /* CatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsViewController.swift; sourceTree = "<group>"; };
 		8D86DFCF21788E54002DBC90 /* CatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCollectionViewCell.swift; sourceTree = "<group>"; };
 		8D86DFD221788E81002DBC90 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		BF8DF6852178AF770008ECE8 /* PopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupVC.swift; sourceTree = "<group>"; };
+		BF8DF687217910410008ECE8 /* GradientViewForButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewForButton.swift; sourceTree = "<group>"; };
 		BFD9A6122174EFE00025B924 /* CheckPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD9A6152174EFE00025B924 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFD9A6172174EFE00025B924 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,13 +93,15 @@
 			isa = PBXGroup;
 			children = (
 				BFD9A6152174EFE00025B924 /* AppDelegate.swift */,
-				BFD9A6272174F5BD0025B924 /* GradientView.swift */,
 				8D86DFCB21788DC0002DBC90 /* homeScreen */,
 				8D86DFCC21788DD8002DBC90 /* catScreen */,
 				BFD9A6192174EFE00025B924 /* Main.storyboard */,
 				BFD9A61C2174EFE00025B924 /* Assets.xcassets */,
 				BFD9A61E2174EFE00025B924 /* LaunchScreen.storyboard */,
 				BFD9A6212174EFE00025B924 /* Info.plist */,
+				BF8DF6852178AF770008ECE8 /* PopupVC.swift */,
+				BFD9A6272174F5BD0025B924 /* GradientView.swift */,
+				BF8DF687217910410008ECE8 /* GradientViewForButton.swift */,
 			);
 			path = CheckPoint;
 			sourceTree = "<group>";
@@ -173,7 +179,9 @@
 			files = (
 				8D86DFD021788E54002DBC90 /* CatCollectionViewCell.swift in Sources */,
 				BFD9A6182174EFE00025B924 /* ViewController.swift in Sources */,
+				BF8DF688217910410008ECE8 /* GradientViewForButton.swift in Sources */,
 				8D86DFD321788E81002DBC90 /* Cat.swift in Sources */,
+				BF8DF6862178AF770008ECE8 /* PopupVC.swift in Sources */,
 				8D86DFCE21788E2D002DBC90 /* CatsViewController.swift in Sources */,
 				BFD9A6162174EFE00025B924 /* AppDelegate.swift in Sources */,
 				BFD9A6282174F5BD0025B924 /* GradientView.swift in Sources */,
