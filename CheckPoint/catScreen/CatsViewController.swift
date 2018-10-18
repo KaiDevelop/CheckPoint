@@ -1,58 +1,61 @@
 //
-//  MacroViewController.swift
+//  CatsViewController.swift
 //  CheckPoint
 //
-//  Created by Henry Lee on 10/16/18.
+//  Created by Henry Lee on 10/18/18.
 //  Copyright © 2018 Raffaele Lieto. All rights reserved.
 //
 
 import UIKit
 
-class MacroViewController: UIViewController {
-    // IBOutlets
-    
+class CatsViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    // @IBOutlet weak var currentImageButton: UIButton!
-    // @IBOutlet weak var currentNameButtion: UIButton!
-    
-    // UICollectionViewDataSource
-    private var cards = Card.createCards()
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
+    var cats = Cat.fetchCats()
+    let cellScaling: CGFloat = 0.6
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-    }
-    
-    private struct Storyboard {
-        static let CellIdentifier = "Card Cell"
+        let screenSize = UIScreen.main.bounds.size
+        let cellWidth = floor(screenSize.width * cellScaling)
+        let cellHeight = floor(screenSize.height * cellScaling)
+        
+        let insetX = (view.bounds.width - cellWidth) / 2.0
+        let insetY = (view.bounds.height - cellHeight) / 2.0
+        
+        let layout = collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.itemSize = CGSize(width: cellWidth, height: cellHeight)
+        collectionView?.contentInset = UIEdgeInsets(top: insetY, left: insetX, bottom: insetY, right: insetX)
+        
+        collectionView?.dataSource = self
+        collectionView?.delegate = self
     }
 }
 
-extension MacroViewController : UICollectionViewDataSource {
+extension CatsViewController : UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cards.count
+        return cats.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Storyboard.CellIdentifier, for: indexPath) as! CardCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CatCell", for: indexPath) as! CatCollectionViewCell
         
-        cell.card = self.cards[indexPath.item]
+        cell.cat = cats[indexPath.item]
         
         return cell
     }
 }
 
-extension MacroViewController : UIScrollViewDelegate {
+extension CatsViewController : UIScrollViewDelegate, UICollectionViewDelegate {
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         
         let layout = self.collectionView?.collectionViewLayout as! UICollectionViewFlowLayout
